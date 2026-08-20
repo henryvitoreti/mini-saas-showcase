@@ -1,0 +1,22 @@
+{
+  "name": "mini-saas-showcase",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Case técnico público do Mini-SaaS Multi-Tenant.",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs",
+    "check:links": "node scripts/check-links.mjs"
+  },
+  "devDependencies": {
+    "@lucide/vue": "^1.31.0",
+    "mermaid": "11.16.1",
+    "vitepress": "1.6.4",
+    "vitepress-plugin-mermaid": "2.0.17"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
