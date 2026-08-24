@@ -12,9 +12,8 @@ fluxos técnicos específicos.
   <div style="grid-column: 1 / -1; width: 100%;">
     <MediaCard
       media-type="video"
-      :src="'/videos/application-overview.webm'"
+      src="/videos/application-overview.webm"
       title="Visão geral da aplicação"
-      details="2–3 min."
       alt="Vídeo com uma visão geral dos principais módulos e da interface da aplicação."
     />
   </div>

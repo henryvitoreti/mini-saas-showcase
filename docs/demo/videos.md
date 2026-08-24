@@ -9,15 +9,14 @@ exclusivamente dados fictícios.
 ## Visão geral
 
 <div class="media-grid">
-  <div style="grid-column: 1 / -1; width: 100%;">
-    <MediaCard
-      media-type="video"
-      :src="'/videos/application-overview.webm'"
-      title="Visão geral da aplicação"
-      details="2–3 min."
-      alt="Vídeo com uma visão geral dos principais módulos e da interface da aplicação."
-    />
-  </div>
+    <div style="grid-column: 1 / -1; width: 100%;">
+        <MediaCard
+            media-type="video"
+            src="/videos/application-overview.webm"
+            title="Visão geral da aplicação"
+            alt="Vídeo com uma visão geral dos principais módulos e da interface da aplicação."
+        />
+    </div>
 </div>
 
 Uma apresentação rápida da V1, passando por login, navegação, clientes,
@@ -29,36 +28,32 @@ aprofundamento nos fluxos específicos.
 ## Demonstrações técnicas
 
 <div class="media-grid">
-  <MediaCard
+    <MediaCard
+        media-type="video"
+        src="/videos/tenant-provisioning.webm"
+        title="Multi-tenancy e provisionamento"
+        alt="Vídeo mostrando a criação de um tenant, provisionamento do banco e primeiro acesso pelo domínio."
+    />
+
+<MediaCard
     media-type="video"
-    :src="'/videos/tenant-provisioning.webm'"
-    title="Multi-tenancy e provisionamento"
-    details="2–4 min."
-    alt="Vídeo mostrando a criação de um tenant, provisionamento do banco e primeiro acesso pelo domínio."
-  />
-
-<MediaCard
-media-type="video"
-:src="'/videos/customers-flow.webm'"
-title="Clientes e AppDataTable"
-details="3–4 min."
-alt="Vídeo demonstrando busca, filtros, paginação, formulário, validação, exportação e ações de clientes."
+    src="/videos/customers-flow.webm"
+    title="Clientes e AppDataTable"
+    alt="Vídeo demonstrando busca, filtros, paginação, formulário, validação, exportação e ações de clientes."
 />
 
 <MediaCard
-media-type="video"
-:src="'/videos/permissions-flow.webm'"
-title="Permissionamento"
-details="2–3 min."
-alt="Vídeo demonstrando configuração de role e os estados disponível, bloqueado e oculto de uma permissão."
+    media-type="video"
+    src="/videos/permissions-flow.webm"
+    title="Permissionamento"
+    alt="Vídeo demonstrando configuração de role e os estados disponível, bloqueado e oculto de uma permissão."
 />
 
 <MediaCard
-media-type="video"
-:src="'/videos/responsive-layout.webm'"
-title="Responsividade"
-details="1–2 min."
-alt="Vídeo demonstrando a adaptação da navegação, listagem e formulários entre desktop e mobile."
+    media-type="video"
+    src="/videos/responsive-layout.webm"
+    title="Responsividade"
+    alt="Vídeo demonstrando a adaptação da navegação, listagem e formulários entre desktop e mobile."
 />
 
 </div>

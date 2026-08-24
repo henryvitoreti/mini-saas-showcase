@@ -4,7 +4,6 @@ import { computed, nextTick, ref } from 'vue';
 
 const props = defineProps<{
   alt: string;
-  filename: string;
   mediaType: 'image' | 'video';
   src: string;
   title: string;
@@ -224,6 +223,7 @@ function handleZoomKeyboard(event: KeyboardEvent): void {
         Seu navegador não suporta vídeo WebM.
       </video>
       <button
+        v-if="mediaType === 'image'"
         class="media-card__expand"
         type="button"
         :aria-label="`Ampliar ${title}`"
@@ -235,10 +235,9 @@ function handleZoomKeyboard(event: KeyboardEvent): void {
     </div>
     <div v-else class="media-card__missing" role="status">
       <span>Mídia pendente</span>
-      <code>{{ filename }}</code>
     </div>
     <figcaption>
-      <strong>{{ title }}</strong> — <code>{{ filename }}</code><span v-if="details"> · {{ details }}</span>
+      <strong>{{ title }}</strong><span v-if="details"> · {{ details }}</span>
     </figcaption>
   </figure>
 
